@@ -52,7 +52,7 @@ export default function SkillsTable({ className }) {
       </Row>
       <Row>
         <Subheader>Front End</Subheader>
-        <P>JavaScript, React, Bootstrap, Material-UI</P>
+        <P>JavaScript, React, JQuery, Bootstrap, Material-UI</P>
       </Row>
       <Row>
         <Subheader>Back End</Subheader>

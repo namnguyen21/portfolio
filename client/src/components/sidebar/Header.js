@@ -9,8 +9,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   @media (max-width: 1000px) {
-    width: 4rem;
-    left: 0;
+    display: none;
   }
 `;
 

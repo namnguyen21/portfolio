@@ -75,6 +75,13 @@ const LinkBox = styled.div`
   margin-top: 1rem;
 `
 
+const ProjectLink = styled.span`
+  padding: 0 2rem;
+  &:not(:last-child){
+    border-right: solid 1px ${props => props.theme.colors.lightBlue}
+  }
+`
+
 const Link = styled.a`
   text-decoration: none;
   display: inline;
@@ -83,9 +90,6 @@ const Link = styled.a`
   color: ${(props) => props.theme.colors.lightBlue};
   &:hover {
     text-decoration: underline;
-  }
-  &:not(:last-child) {
-    margin-right: 1rem;
   }
 `;
 
@@ -103,25 +107,25 @@ export default function Tweet({ date, message, image, projectLink, gitLink, prev
         </Message>
         <LinkBox>
           {projectLink ? (
-            <span style={{marginRight: '3rem'}}>
+            <ProjectLink>
               <Link target="_blank" href={projectLink}>
                 Visit
               </Link>
-            </span>
+            </ProjectLink>
           ) : null}
           {gitLink ? (
-            <span style={{marginRight: '3rem'}}>
+            <ProjectLink>
               <Link target="_blank" href={gitLink}>
                 Code
               </Link>
-            </span>
+            </ProjectLink>
           ) : null}
           {previewLink ? (
-            <span>
+            <ProjectLink>
               <Link target="_blank" href={previewLink}>
                 View Demo
               </Link>
-            </span>
+            </ProjectLink>
           ) : null}
         </LinkBox>
 

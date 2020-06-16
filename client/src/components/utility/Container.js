@@ -5,8 +5,9 @@ const Wrapper = styled.div`
   margin-left: 25rem;
   width: calc(100vw - 30rem);
   @media (max-width: 1000px) {
-    margin-left: 4rem;
-    width: calc(100vw - 4rem);
+    margin-left: 0;
+    width: 100vw;
+    padding: 0 1rem;
   }
   /* @media (max-width: 1200px) and( min-width: 800px) {
     width: 95vw;

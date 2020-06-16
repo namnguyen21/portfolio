@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   border-left: solid 1px ${(props) => props.theme.colors.grey};
   overflow: auto;
   @media (max-width: 1000px) {
-    border-right: none;
+    border: none;
   }
 `;
 
